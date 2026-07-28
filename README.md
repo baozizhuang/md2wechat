@@ -6,6 +6,12 @@
 
 把 **Markdown 一键转成可直接粘贴进微信公众号编辑器的排版 HTML**——全内联样式，复制粘贴不丢格式。
 
+## 效果预览
+
+![三套主题效果对比](docs/images/themes.png)
+
+从左到右依次为 `default`（清爽蓝）、`warm`（暖橙）、`ink`（墨黑），渲染内容见 [examples/example.md](examples/example.md)。生成 HTML 后用浏览器打开，全选复制、粘贴进公众号编辑器，即可得到图中效果。
+
 ## 为什么做这个
 
 公众号编辑器会过滤 `<style>` 标签和 `class` 属性，直接粘贴普通 Markdown 渲染结果会丢光所有样式。md2wechat 的做法是：**先把 Markdown 渲染成 HTML，再把每个元素的样式全部写成内联 `style`**，只有内联样式能在"复制 → 粘贴到公众号编辑器"的过程中活下来。
